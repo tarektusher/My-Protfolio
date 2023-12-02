@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Home', 'About', 'Service', 'Protfolio', 'Testimonials', 'Contact'];
+// const pages = ['Home', 'About', 'Service', 'Protfolio', 'Testimonials', 'Contact'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nabbar() {
@@ -36,7 +36,7 @@ function Nabbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor : 'white'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -44,7 +44,7 @@ function Nabbar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -65,10 +65,10 @@ function Nabbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#26DABE"
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton >
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -87,12 +87,12 @@ function Nabbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <Button sx={{color : 'black', fontWeight : '500'}}>Home</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '500'}}>About</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '500'}}>Service</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '500'}}>Protfolio</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '500'}}>Testimonial</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '500'}}>Contact</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Home</Button><br/>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>About</Button><br/>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Service</Button><br/>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button><br/>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button><br/>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
             </Menu>
           </Box>
           <Typography
@@ -107,24 +107,22 @@ function Nabbar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#26DABE',
               textDecoration: 'none',
             }}
           >
             TAREK
           </Typography>
-          <Box sx={{  display: { xs: 'none', alignItems : 'right', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{display : 'flex', gap : '1rem'}}>
+              <Button sx={{color : 'black', fontWeight : '700' , marginLeft : '50vh', marginRight : 'auto', ":hover" :{backgroundColor :'#24bfa7'}}}>Home</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>About</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Service</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button>
+              <Button sx={{color : 'black', fontWeight : '700' , backgroundColor : '#26DABE', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
+            </Box>
+        </Box>  
           <Box sx={{ flexGrow: 0 }}>
             {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
