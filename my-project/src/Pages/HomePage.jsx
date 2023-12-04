@@ -7,7 +7,6 @@ import {  IconButton, Typography } from '@mui/material';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { red } from '@mui/material/colors';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -30,7 +29,6 @@ export default function HomePage() {
             </Typography>
             <Typography variant='h6' >
                 I am a Full Stack Developer. Currently I'm working Vivasoft LTD as a Intern Software Engineer.<br/>
-                
             </Typography>
             <IconButton href='https://www.facebook.com/profile.php?id=100011716865124' target='_blank' rel="noopener noreferrer" sx={{color : '#0866FF', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
                 <FacebookOutlinedIcon/>
@@ -43,7 +41,6 @@ export default function HomePage() {
             </IconButton>
           </Item>
         </Grid>
-       
       </Grid>
     </Box>
   );
