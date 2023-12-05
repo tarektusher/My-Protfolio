@@ -114,7 +114,7 @@ function Nabbar() {
             <Box sx={{display : 'flex', gap : '1rem'}}>
               <Button sx={{color : 'black', fontWeight : '700' , marginLeft : '50vh', marginRight : 'auto', ":hover" :{backgroundColor :'#24bfa7'}}}>Home</Button>
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}} href='.about'>About</Button>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Service</Button>
+              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Skill</Button>
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button>
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button>
               <Button sx={{color : 'black', fontWeight : '700' , backgroundColor : '#26DABE', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>

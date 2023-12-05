@@ -1,11 +1,11 @@
 import React from "react";
 import img from "../assets/mypic.jpeg"
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 function AboutPage() {
   return (
     <div className="mt-10" id= "about">
       <h1 className="text-6xl text-mainColor">About me</h1>
-      <div className="m-20 md:flex justify-between items-center gap-12">
+      <div className="m-24 md:flex justify-between items-center gap-12">
         <div >
           <img style={{height : '400px', width : '400px', borderRadius : '10px'}} src={img} className=" shadow-2xl max-w-xs transition duration-300 ease-in-out hover:scale-110" alt="My Pic" />
         </div>
@@ -17,6 +17,9 @@ function AboutPage() {
             passionate about Competetive Programming. I solve more than 3000
             problems in various judge.
           </p>
+          <div className="align-middle mt-7">
+          <Button variant="contained"  sx={{background : "#24BFA7", ":hover": {backgroundColor :'#24bcbf'}}}>DownLoad CV</Button>
+          </div>
         </div>
       </div>
     </div>
