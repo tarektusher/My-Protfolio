@@ -18,7 +18,7 @@ function AboutPage() {
             problems in various judge.
           </p>
           <div className="align-middle mt-7">
-          <Button variant="contained"  sx={{background : "#24BFA7", ":hover": {backgroundColor :'#24bcbf'}}}>DownLoad CV</Button>
+          <Button variant="contained" target="_blank" href="https://drive.google.com/file/d/15Tsv2kd1faAif5Ck2_9atrmyqE5x3ZGT/view?usp=sharing"  sx={{background : "#24BFA7", ":hover": {backgroundColor :'#24bcbf'}}}>DownLoad CV</Button>
           </div>
         </div>
       </div>
