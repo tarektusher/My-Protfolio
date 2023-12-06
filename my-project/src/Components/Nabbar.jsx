@@ -33,7 +33,7 @@ function Nabbar() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor : 'white'}}>
+    <AppBar position="fixed" sx={{backgroundColor : 'white'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
