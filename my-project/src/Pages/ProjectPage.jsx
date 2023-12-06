@@ -4,6 +4,7 @@ import { Card } from '@mui/material'
 import ProjectTwo from '../Components/ProjectTwo'
 import ProjectThree from '../Components/ProjectThree'
 import ProjectFive from '../Components/ProjectFive'
+import ProjectFour from '../Components/ProjectFour'
 function ProjectPage() {
   return (
     <Card sx={{marginTop : '30px', paddingBottom : '50px'}}>
@@ -12,7 +13,7 @@ function ProjectPage() {
             <ProjectOne></ProjectOne>
             <ProjectTwo></ProjectTwo>
             <ProjectThree></ProjectThree>
-            <ProjectOne></ProjectOne>
+            <ProjectFour></ProjectFour>
             <ProjectFive></ProjectFive>
             <ProjectOne></ProjectOne>
 

@@ -7,7 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
-import project3 from "../assets/project3.png"
+import project4 from "../assets/project4.avif"
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -17,7 +17,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function ProjectThree() {
+export default function ProjectFour() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -33,11 +33,11 @@ export default function ProjectThree() {
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
-            src={project3}
-            alt="EMS pic"
+            src={project4}
+            alt="Netflix pic"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl" style={{marginTop : '92px'}}>Expense Management System</div>
+            <div className="font-bold text-xl" style={{marginTop : '92px'}}>Clone Netflix </div>
           </div>
         </div>
       </Button>
@@ -63,29 +63,25 @@ export default function ProjectThree() {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-          This is a Full Stack project. This Project is my running project. In this project I can track my Daily and Monthly expense as well as Income.
+            This is my first complete Tailwind landing page project. In this project I clone 
+            Netflix front page.
           </Typography>
           <Typography>
           <div className="pt-4 pb-2 ">
             <span className="inline-block  bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Node JS
+              HTML
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              React JS
+              CSS
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Express JS
+              Tailwind
             </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Mongo DB
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Material UI
-            </span>
+            
           </div>
           </Typography>
         </DialogContent>
-        <Button variant="contained" href="https://github.com/tarektusher/Daily-Expense-Management-System" target="_blank"
+        <Button variant="contained" href="https://github.com/tarektusher/Cloning-Netflix-Using-Tailwind-CSS" target="_blank"
          sx={{textAlign : 'center',fontWeight : 'bold', margin : '10px',width : 'auto'}}>Github Link</Button>
       </BootstrapDialog>
     </React.Fragment>
