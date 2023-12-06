@@ -5,7 +5,7 @@ function AboutPage() {
   return (
     <Card>
     <div className="mt-10" id="about">
-      <h1 className="text-6xl text-mainColor">About me</h1>
+      <p className="text-6xl text-mainColor">About me</p>
       <div className="m-24 md:flex justify-between items-center gap-12">
         <div>
           <img

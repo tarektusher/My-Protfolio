@@ -7,7 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
-import project1 from "../assets/project1.png"
+import project2 from "../assets/project2.png"
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -17,7 +17,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function ProjectOne() {
+export default function ProjectTwo() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -33,11 +33,11 @@ export default function ProjectOne() {
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
-            src={project1}
-            alt="BDFlix Image"
+            src={project2}
+            alt="EMS pic"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">BDFlix</div>
+            <div className="font-bold text-xl mt-28">Employee Management System</div>
           </div>
         </div>
       </Button>
@@ -63,29 +63,30 @@ export default function ProjectOne() {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Bd Flix is a landing page for rendering movies using open API . This
-            is my first task for the VIVASOFT LEARNATHON 2.0. This project
-            involves rendering moives, searching, sorting, and doing CRUD
-            operations.In this project using Context API and lazy loading also.
+          My first Full Stack project is this. Users will be able to efficiently manage and arrange employee-related data with the help of this application. The following features and capabilities should be
+available on the website: datatables, dashboard, search, details, view, authentication and filtering.
           </Typography>
           <Typography>
           <div className="pt-4 pb-2 ">
             <span className="inline-block  bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              Node JS
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               React JS
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Tailwind
+              Express JS
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Matrial UI
+              Mongo DB
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              Open API
+              Material UI
             </span>
           </div>
           </Typography>
         </DialogContent>
-        <Button variant="contained" href="https://github.com/tarektusher/BDFlix-Movie-Server" target="_blank"
+        <Button variant="contained" href="https://github.com/tarektusher/Employee-Management-System" target="_blank"
          sx={{textAlign : 'center',fontWeight : 'bold', margin : '10px',width : 'auto'}}>Github Link</Button>
       </BootstrapDialog>
     </React.Fragment>

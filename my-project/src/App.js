@@ -3,7 +3,7 @@ import './App.css';
 import Nabbar from './Components/Nabbar';
 import AboutPage from './Pages/AboutPage';
 import HomePage from './Pages/HomePage';
-import ProjectPage from './Components/ProjectOne';
+import ProjectPage from './Pages/ProjectPage';
 import SkillPage from './Pages/SkillPage';
 function App() {
   return (
