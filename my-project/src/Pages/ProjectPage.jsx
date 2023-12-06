@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectOne from '../Components/ProjectOne'
 import { Card } from '@mui/material'
 import ProjectTwo from '../Components/ProjectTwo'
+import ProjectThree from '../Components/ProjectThree'
 function ProjectPage() {
   return (
     <Card sx={{marginTop : '30px', paddingBottom : '50px'}}>
@@ -9,7 +10,7 @@ function ProjectPage() {
         <div className='md : flex justify-evenly items-center flex-wrap gap-4 mx-4 my-10'>
             <ProjectOne></ProjectOne>
             <ProjectTwo></ProjectTwo>
-            <ProjectOne></ProjectOne>
+            <ProjectThree></ProjectThree>
             <ProjectOne></ProjectOne>
             <ProjectOne></ProjectOne>
             <ProjectOne></ProjectOne>
