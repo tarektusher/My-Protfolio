@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Card } from "@mui/material";
 import React from "react";
 import C from "../assets/C.png";
 import cpp from "../assets/cpp.jpeg";
@@ -18,7 +18,7 @@ import github from "../assets/github.png";
 
 function SkillPage() {
   return (
-    <Box>
+    <Card sx={{marginTop : '30px', paddingBottom : '50px'}}>
       <p className="text-6xl text-mainColor">Skill</p>
       <div className="mt-10 mx-24 md : flex flex-wrap  gap-4 justify-evenly items-center">
         <section class="mx-auto w-fit">
@@ -215,7 +215,7 @@ function SkillPage() {
         </section> */}
 
       </div>
-    </Box>
+    </Card>
   );
 }
 

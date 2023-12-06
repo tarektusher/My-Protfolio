@@ -1,8 +1,9 @@
 import React from "react";
 import img from "../assets/mypic.jpeg";
-import { Button, Typography } from "@mui/material";
+import { Button, Card, Typography } from "@mui/material";
 function AboutPage() {
   return (
+    <Card>
     <div className="mt-10" id="about">
       <h1 className="text-6xl text-mainColor">About me</h1>
       <div className="m-24 md:flex justify-between items-center gap-12">
@@ -41,7 +42,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-    </div>
+    </div></Card>
   );
 }
 
