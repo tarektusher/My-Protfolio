@@ -1,14 +1,14 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import { Link } from "react-scroll";
 // const pages = ['Home', 'About', 'Service', 'Protfolio', 'Testimonials', 'Contact'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -33,7 +33,7 @@ function Nabbar() {
   };
 
   return (
-    <AppBar position="fixed" sx={{backgroundColor : 'white'}}>
+    <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -44,18 +44,18 @@ function Nabbar() {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: ".3rem",
               color: "#028D8D",
-              textDecoration: 'none',
+              pointerEvents: "none",
             }}
           >
             TAREK
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -65,31 +65,124 @@ function Nabbar() {
               color="#26DABE"
             >
               <MenuIcon />
-            </IconButton >
+            </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Home</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>About</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Service</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button><br/>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Home
+                </Link>
+              </Button>
+              <br />
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  About
+                </Link>
+              </Button>
+              <br />
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="skill"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Skill
+                </Link>
+              </Button>
+              <br />
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Project
+                </Link>
+              </Button>
+              <br />
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Contact
+                </Link>
+              </Button>
             </Menu>
           </Box>
           <Typography
@@ -99,55 +192,135 @@ function Nabbar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: '#26DABE',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "#26DABE",
+              textDecoration: "none",
             }}
           >
             TAREK
           </Typography>
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Box sx={{display : 'flex', gap : '1rem'}}>
-              <Button sx={{color : 'black', fontWeight : '700' , marginLeft : '50vh', marginRight : 'auto', ":hover" :{backgroundColor :'#24bfa7'}}}>Home</Button>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}} href='.about'>About</Button>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Skill</Button>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button>
-              <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button>
-              <Button sx={{color : 'black', fontWeight : '700' , backgroundColor : '#028D8D', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Box sx={{ display: "flex", gap: "1rem" }}>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  marginLeft: "50vh",
+                  marginRight: "auto",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Home
+                </Link>
+              </Button>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  About
+                </Link>
+              </Button>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="skill"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Skill
+                </Link>
+              </Button>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  // onClick={closeMenu}
+                >
+                  Project
+                </Link>
+              </Button>
+              <Button
+                sx={{
+                  color: "black",
+                  fontWeight: "700",
+                  backgroundColor: "#028D8D",
+                  ":hover": { backgroundColor: "#24bfa7" },
+                }}
+              >
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+              </Button>
             </Box>
-        </Box>  
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip> */}
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
-            >
-              {/* {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))} */}
-            </Menu>
+            ></Menu>
           </Box>
         </Toolbar>
       </Container>

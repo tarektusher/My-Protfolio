@@ -34,7 +34,7 @@ export default function HomePage() {
       backgroundSize: "cover",
       height: "100%",
       width : '100%'
-    }}>
+    }} id='home'>
       <Grid container spacing={0}>
         <Grid xs={12}>
           <Item>

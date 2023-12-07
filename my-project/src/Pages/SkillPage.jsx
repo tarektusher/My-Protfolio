@@ -18,7 +18,7 @@ import github from "../assets/github.png";
 
 function SkillPage() {
   return (
-    <Card sx={{ marginTop: "30px", paddingBottom: "50px" }}>
+    <Card sx={{ marginTop: "30px", paddingBottom: "50px" }} id = 'skill'>
       <div class="flex justify-center">
         <div class="text-center md:max-w-xl lg:max-w-3xl">
           <h2 class="mb-12 px-6 text-3xl font-bold">Skill</h2>

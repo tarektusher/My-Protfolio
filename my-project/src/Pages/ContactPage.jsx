@@ -9,7 +9,7 @@ function ContactPage() {
         AOS.init();
       }, [])
   return (
-    <div ata-aos="zoom-in-up">
+    <div ata-aos="zoom-in-up" id = "contact">
       <div class="container my-7 mx-auto md:px-6">
         <section class="mb-10">
           <div class="flex justify-center">
