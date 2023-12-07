@@ -7,6 +7,10 @@ import {  IconButton, Typography } from '@mui/material';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -19,6 +23,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function HomePage() {
+  React.useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <Box sx={{
        flexGrow: 1, marginTop : '200px',

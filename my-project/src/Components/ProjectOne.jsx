@@ -8,6 +8,8 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import project1 from "../assets/project1.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -26,11 +28,13 @@ export default function ProjectOne() {
   const handleClose = () => {
     setOpen(false);
   };
-
+  React.useEffect(() => {
+    AOS.init({duration:1000});
+  }, [])
   return (
     <React.Fragment>
       <Button variant="outlined" onClick={handleClickOpen}>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <div  className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
             src={project1}

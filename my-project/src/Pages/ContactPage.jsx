@@ -1,22 +1,27 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button, Grid, TextField, Typography, Box } from "@mui/material";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function ContactPage() {
+    React.useEffect(() => {
+        AOS.init();
+      }, [])
   return (
-    <div>
+    <div ata-aos="zoom-in-up">
       <div class="container my-7 mx-auto md:px-6">
         <section class="mb-10">
           <div class="flex justify-center">
             <div class="text-center md:max-w-xl lg:max-w-3xl">
-              <h2 class="mb-12 px-6 text-3xl font-bold">Contact us</h2>
+              <h2 class="mb-12 px-6 text-3xl font-bold">Contact me</h2>
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-between items-center">
+          <div  class="flex flex-wrap justify-between items-center">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
               <form>
-              <Box sx={{ flexGrow: 1 }}>
+              <Box  sx={{ flexGrow: 1 }}>
                 <Grid container spacing={4} >
                     
                     <Grid>
@@ -71,7 +76,7 @@ function ContactPage() {
                
               </form>
             </div>
-            <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+            <div  class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
               <div class="flex flex-wrap">
                 <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div class="flex items-start">
@@ -147,7 +152,7 @@ function ContactPage() {
         </section>
         
       </div>
-      <p>&copy; All rights reserved by <span className="text-mainColor">Md Tarek Hossain Tusher</span></p>
+      <p className="mb-1">&copy; All rights reserved by <span className="text-mainColor">Md Tarek Hossain Tusher</span></p>
     </div>
   );
 }
