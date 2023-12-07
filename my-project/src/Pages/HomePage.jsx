@@ -7,6 +7,7 @@ import {  IconButton, Typography } from '@mui/material';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import cover from '../assets/bg.avif'
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -20,7 +21,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function HomePage() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{
+       flexGrow: 1, marginTop : '200px',
+      backgroundImage:`url("../assets/bg.avif")`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      height: "100%",
+      width : '100%'
+    }}>
       <Grid container spacing={0}>
         <Grid xs={12}>
           <Item>
@@ -28,15 +36,15 @@ export default function HomePage() {
                 Hi, I'm <span style={{color : '#24BFA7'}}>Tarek Tusher</span>
             </Typography>
             <Typography variant='h6' >
-                I am a Full Stack Developer. Currently I'm working Vivasoft LTD as a Intern Software Engineer.<br/>
+                I am a Full Stack Developer. Currently I'm a student of Comilla University.<br/>
             </Typography>
-            <IconButton href='https://www.facebook.com/profile.php?id=100011716865124' target='_blank' rel="noopener noreferrer" sx={{color : '#0866FF', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
+            <IconButton href='https://www.facebook.com/profile.php?id=100011716865124' target='_blank' rel="noopener noreferrer" sx={{marginBottom : '150px', color : '#0866FF', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
                 <FacebookOutlinedIcon/>
             </IconButton>
-            <IconButton href='https://www.linkedin.com/in/mdtarek33/' target='_blank' rel="noopener noreferrer" sx={{color : '#0A66C2', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
+            <IconButton href='https://www.linkedin.com/in/mdtarek33/' target='_blank' rel="noopener noreferrer" sx={{color : '#0A66C2',marginBottom : '150px', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
                 <LinkedInIcon/>
             </IconButton>
-            <IconButton href='https://github.com/tarektusher' target='_blank' rel="noopener noreferrer" sx={{color : '#010409', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
+            <IconButton href='https://github.com/tarektusher' target='_blank' rel="noopener noreferrer" sx={{color : '#010409',marginBottom: '150px', marginTop : '1vh', ":hover" : {borderColor : '#24BFA7'}}}>
                 <GitHubIcon/>
             </IconButton>
           </Item>

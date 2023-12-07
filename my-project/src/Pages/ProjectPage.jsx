@@ -5,6 +5,7 @@ import ProjectTwo from '../Components/ProjectTwo'
 import ProjectThree from '../Components/ProjectThree'
 import ProjectFive from '../Components/ProjectFive'
 import ProjectFour from '../Components/ProjectFour'
+import ProjectSix from '../Components/ProjectSix'
 function ProjectPage() {
   return (
     <Card sx={{marginTop : '30px', paddingBottom : '50px'}}>
@@ -15,7 +16,7 @@ function ProjectPage() {
             <ProjectThree></ProjectThree>
             <ProjectFour></ProjectFour>
             <ProjectFive></ProjectFive>
-            <ProjectOne></ProjectOne>
+            <ProjectSix></ProjectSix>
 
         </div>
         
