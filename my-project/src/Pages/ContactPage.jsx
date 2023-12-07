@@ -10,17 +10,17 @@ function ContactPage() {
       }, [])
   return (
     <div ata-aos="zoom-in-up" id = "contact">
-      <div class="container my-7 mx-auto md:px-6">
-        <section class="mb-10">
-          <div class="flex justify-center">
-            <div class="text-center md:max-w-xl lg:max-w-3xl">
-              <h2 class="mb-12 px-6 text-3xl font-bold">Contact me</h2>
+      <div className="container my-7 mx-auto md:px-6">
+        <section className="mb-10">
+          <div className="flex justify-center">
+            <div className="text-center md:max-w-xl lg:max-w-3xl">
+              <h2 className="mb-12 px-6 text-3xl font-bold">Contact me</h2>
             </div>
           </div>
 
-          <div  class="flex flex-wrap justify-between items-center">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-              <form>
+          <div  className="flex flex-wrap justify-between items-center">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+              <form className="px-10 md:w-full bg-white rounded-lg items-center">
               <Box  sx={{ flexGrow: 1 }}>
                 <Grid container spacing={4} >
                     
@@ -56,6 +56,7 @@ function ContactPage() {
                           fullWidth
                           required
                           sx={{marginTop : '20px'}}
+                          className="w-64 md:w-full"
                         />
                     <Button
                         type="submit"
