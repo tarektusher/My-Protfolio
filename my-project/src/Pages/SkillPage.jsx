@@ -18,176 +18,180 @@ import github from "../assets/github.png";
 
 function SkillPage() {
   return (
-    <Card sx={{marginTop : '30px', paddingBottom : '50px'}}>
-      <p className="text-6xl text-mainColor">Skill</p>
-      <div className="mt-10 mx-24 md : flex flex-wrap  gap-4 justify-evenly items-center">
+    <Card sx={{ marginTop: "30px", paddingBottom: "50px" }}>
+      <div class="flex justify-center">
+        <div class="text-center md:max-w-xl lg:max-w-3xl">
+          <h2 class="mb-12 px-6 text-3xl font-bold">Skill</h2>
+        </div>
+      </div>
+      <div className="mx-24 md : flex flex-wrap  gap-4 justify-evenly items-center">
         <section class="mx-auto w-fit">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={C} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={C} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                C <br/> 90%
+                  C <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={cpp} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={cpp} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                C++ <br/> 90%
+                  C++ <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={js} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={js} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                JavaScript <br/> 90%
+                  JavaScript <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={nodejs} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={nodejs} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Node JS <br/> 90%
+                  Node JS <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={expressjs} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={expressjs} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Express JS <br/> 90%
+                  Express JS <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={html} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={html} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                HTML <br/> 95%
+                  HTML <br /> 95%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={css} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={css} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                CSS <br/> 80%
+                  CSS <br /> 80%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={bootstrap} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={bootstrap} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Bootstrap <br/> 90%
+                  Bootstrap <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={tailwind} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={tailwind} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Tailwind <br/> 90%
+                  Tailwind <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={mysql} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={mysql} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                My Sql <br/> 85%
+                  My Sql <br /> 85%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={mongdb} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={mongdb} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Mongo DB <br/> 90%
+                  Mongo DB <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={react} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={react} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                React <br/> 92%
+                  React <br /> 92%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={next} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={next} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Next <br/> 92%
+                  Next <br /> 92%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         <section class="mx-auto w-fit ">
-        <div class="w-36 h-36 group">
+          <div class="w-36 h-36 group">
             <div class="relative rounded-md overflow-hidden">
-            <img class="h-36 w-36 object-cover" src={github} alt="" />
-            <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <img class="h-36 w-36 object-cover" src={github} alt="" />
+              <div class="absolute h-full w-full  bg-zinc-200 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <button class=" text-black text-3xl py-2 px-5 rounded-md">
-                Git Hub <br/> 90%
+                  Git Hub <br /> 90%
                 </button>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </section>
         {/* <section class="mx-auto w-fit ">
         <div class="w-36 h-36 group">
@@ -213,7 +217,6 @@ function SkillPage() {
             </div>
         </div>
         </section> */}
-
       </div>
     </Card>
   );

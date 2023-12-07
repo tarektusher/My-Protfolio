@@ -48,7 +48,7 @@ function Nabbar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: "#26DABE",
+              color: "#028D8D",
               textDecoration: 'none',
             }}
           >
@@ -117,7 +117,7 @@ function Nabbar() {
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Skill</Button>
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Protfolio</Button>
               <Button sx={{color : 'black', fontWeight : '700', ":hover" :{backgroundColor :'#24bfa7'}}}>Testimonial</Button>
-              <Button sx={{color : 'black', fontWeight : '700' , backgroundColor : '#26DABE', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
+              <Button sx={{color : 'black', fontWeight : '700' , backgroundColor : '#028D8D', ":hover" :{backgroundColor :'#24bfa7'}}}>Contact</Button>
             </Box>
         </Box>  
           <Box sx={{ flexGrow: 0 }}>

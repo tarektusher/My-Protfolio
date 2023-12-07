@@ -7,7 +7,6 @@ import {  IconButton, Typography } from '@mui/material';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import cover from '../assets/bg.avif'
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -33,7 +32,7 @@ export default function HomePage() {
         <Grid xs={12}>
           <Item>
             <Typography variant='h2' sx={{textAlign : 'center',color : 'black'}}>
-                Hi, I'm <span style={{color : '#24BFA7'}}>Tarek Tusher</span>
+                Hi, I'm <span style={{color : '#028D8D'}}>Tarek Tusher</span>
             </Typography>
             <Typography variant='h6' >
                 I am a Full Stack Developer. Currently I'm a student of Comilla University.<br/>
