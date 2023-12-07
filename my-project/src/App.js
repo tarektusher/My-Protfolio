@@ -20,7 +20,9 @@ function App() {
      data-aos-duration="1000">
         <HomePage></HomePage></div>
         <AboutPage></AboutPage>
-        <SkillPage></SkillPage>
+        <div data-aos="fade-up"
+     data-aos-duration="1000">
+        <SkillPage></SkillPage></div>
         <ProjectPage></ProjectPage>
         <div data-aos="fade-up"
      data-aos-duration="1000">
